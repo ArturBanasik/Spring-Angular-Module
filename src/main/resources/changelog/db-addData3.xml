@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="AB" id="4">
+        <insert tableName="ELECTRONICS">
+            <column name="ID" value="3"/>
+            <column name="TAG" value="Sony 40' 4K UHD"/>
+            <column name="CATEGORY" value="Television"/>
+            <column name="BROKEN" value="false"/>
+            <column name="COMMENT" value=""/>
+            <column name="DETAILS" value="[Screen Size : 40 in, Resolution : 4K Ultra HD]"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

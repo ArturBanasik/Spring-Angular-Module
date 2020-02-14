@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="AB" id="1">
+        <createTable tableName="ELECTRONICS">
+            <column autoIncrement="true" name="ID" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="ID"/>
+            </column>
+            <column name="TAG" type="varchar(255)"/>
+            <column name="CATEGORY" type="varchar(255)"/>
+            <column name="BROKEN" type="boolean"/>
+            <column name="COMMENT" type="varchar(255)"/>
+            <column name="DETAILS" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
+
