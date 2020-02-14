@@ -26,6 +26,7 @@ export class ListElectricsComponent implements OnInit {
   constructor(
     private electricsListService: ElectronicsDataService,
     private router: Router) {
+    this.loadList();
   }
 
   ngOnInit() {
