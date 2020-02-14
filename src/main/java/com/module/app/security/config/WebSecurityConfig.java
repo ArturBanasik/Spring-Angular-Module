@@ -13,8 +13,8 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private final String USER_ROLE = "USER";
-    private final String USER_LOGIN = "username";
-    private final String USER_PASS = "password";
+    private final String USER_LOGIN = "user";
+    private final String USER_PASS = "pass";
 
     @Bean
     public UserDetailsService userDetailsService() {
