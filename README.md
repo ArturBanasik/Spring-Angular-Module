@@ -8,7 +8,7 @@
 
 
 ### Login credentials
-In website go for [localhost:4200](http://localhost:4200/)
+In web browser go for [localhost:4200](http://localhost:4200/)
 
  > **Username:** user
  >
