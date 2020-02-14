@@ -1,5 +1,10 @@
 package com.module.app.web.entity;
 
+/**
+ * Stałe potrzebne do nazw sprzętu
+ *
+ * @author Artur
+ */
 public class ElectronicsConstants {
     public static final String ELECTRONICS_TABLE_NAME = "ELECTRONICS";
     public static final String ID_COLUMN_NAME = "ID";
