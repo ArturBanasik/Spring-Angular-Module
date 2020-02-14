@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-dark navbar-expand-md">
+  <a routerLink="/list" class="text-light card-link nav-link">Home</a>
+  <ul class="navbar-nav">
+    <li><a *ngIf="!basicAuthenticationService.isUserLoggedIn()" routerLink="/login"
+           class="text-light card-link nav-link">Login</a></li>
+    <li><a *ngIf="basicAuthenticationService.isUserLoggedIn()" routerLink="/logout"
+           class="text-light card-link nav-link">Logout</a></li>
+  </ul>
+</nav>

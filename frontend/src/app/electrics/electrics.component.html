@@ -1,0 +1,34 @@
+<div class="p-5">
+
+  <h2>REPORTING ITEM ISSUE</h2>
+  <div class="form-group">
+    <label>ID</label>
+    <input class="form-control" id="ID" placeholder="{{electronics.id}}" readonly>
+  </div>
+
+  <div class="form-group">
+    <label>TAG</label>
+    <input class="form-control" id="TAG" placeholder="{{electronics.tag}}" readonly>
+  </div>
+
+  <div class="form-group">
+    <label>CATEGORY</label>
+    <input class="form-control" id="CATEGORY" placeholder="{{electronics.category}}" readonly>
+  </div>
+
+  <div class="form-group">
+    <label>DETAILS</label>
+    <input class="form-control" id="DETAILS" placeholder="{{electronics.details}}" readonly>
+  </div>
+
+  <div class="form-group">
+    <label>COMMENT</label>
+    <input [ngModel]="electronics.comment" (ngModelChange)="electronics.comment = $event" class="form-control"
+           id="COMMENT" placeholder="Write issue comment here" data-toggle="tooltip"
+           title="DELETE WHOLE COMMENT TO BRING BACK BROKEN STATUS FALSE"
+           type="email">
+  </div>
+
+  <button (click)="reportElectrics()" class="btn-danger">REPORT ISSUE</button>
+
+</div>
