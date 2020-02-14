@@ -1,12 +1,12 @@
-#Spring-Angular-Module
-###Application consist of SpringBoot backend that contains Angular frontend to run it follow the steps:
-###Runing application
+# Spring-Angular-Module
+### Application consist of SpringBoot backend that contains Angular frontend to run it follow the steps:
+### Runing application
 - Run mvn clean install
 - Run backend application using AppApplication.java
 - Run npm install
 - Run frontend application using package.json
 
-###Login credentials
+### Login credentials
  > **Username:** user
  >
  > **Password:** pass
