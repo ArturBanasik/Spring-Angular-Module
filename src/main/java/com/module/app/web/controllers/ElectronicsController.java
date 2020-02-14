@@ -37,13 +37,6 @@ public class ElectronicsController {
         return new ResponseEntity(electronicsRepository.findAll(), HttpStatus.OK);
     }
 
-    static class ListComparator implements Comparator<Electronics> {
-        @Override
-        public int compare(Electronics o1, Electronics o2) {
-            return Boolean.compare(o1.isBroken(), o2.isBroken());
-        }
-    }
-
     /**
      * Endpoint odpowiedzialny za pobranie jednego sprzętu
      *
@@ -55,7 +48,7 @@ public class ElectronicsController {
     }
 
     /**
-     * Endpoint odpowiedzialny za dodanie sprzętu
+     * Endpoint odpowiedzialny za dodanie sprzętu (na chwile obecną nie używany)
      *
      * @return - odpowiedz z kodem http
      */
