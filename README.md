@@ -6,7 +6,10 @@
 - Run npm install
 - Run frontend application using package.json
 
+
 ### Login credentials
+In website go for [localhost:4200](http://localhost:4200/)
+
  > **Username:** user
  >
  > **Password:** pass
