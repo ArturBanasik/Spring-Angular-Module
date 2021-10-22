@@ -5,7 +5,13 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet author="AB" id="1">
-        <createTable tableName="ELECTRONICS">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="electronics"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="electronics">
             <column autoIncrement="true" name="ID" type="bigint">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="ID"/>
             </column>

@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
     @GetMapping(path = "/authenticate")
     public AuthenticationBean auth() {
-        return new AuthenticationBean("You are authenticated!");
+//        return new AuthenticationBean("You are authenticated!");
+        return null;
     }
+
 }

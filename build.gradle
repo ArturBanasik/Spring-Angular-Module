@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'java'
+}
+
+version = '1.0.2'
+group = 'org.gradle.samples'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.5.6'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.5.6', ext: 'pom'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.6'
+    implementation 'org.liquibase:liquibase-core:4.5.0'
+    implementation group: 'com.h2database', name: 'h2', version: '1.4.200'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.5.6'
+    testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.8.1'
+    testImplementation group: 'org.springframework.security', name: 'spring-security-test', version: '5.5.3'
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
+

@@ -19,7 +19,6 @@ import static com.module.app.web.entity.ElectronicsConstants.*;
 @Entity
 @Table(name = ELECTRONICS_TABLE_NAME)
 public class Electronics {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = ID_COLUMN_NAME)

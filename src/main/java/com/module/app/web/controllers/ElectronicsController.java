@@ -3,6 +3,7 @@ package com.module.app.web.controllers;
 import com.module.app.web.entity.Electronics;
 import com.module.app.web.repository.ElectronicsRepository;
 import com.module.app.web.services.ElectronicsService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,14 +19,11 @@ import java.util.Optional;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(path = "/electronics")
+@RequiredArgsConstructor
 public class ElectronicsController {
     private final ElectronicsRepository electronicsRepository;
     private final ElectronicsService electronicsService;
 
-    public ElectronicsController(ElectronicsRepository electronicsRepository, ElectronicsService electronicsService) {
-        this.electronicsRepository = electronicsRepository;
-        this.electronicsService = electronicsService;
-    }
 
     /**
      * Endpoint odpowiedzialny za pobranie pełnej listy sprzętów

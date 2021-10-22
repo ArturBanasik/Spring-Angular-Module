@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="AB" id="11">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="upload_data"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="upload_data">
+            <column autoIncrement="true" name="upload_data_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="upload_data_id"/>
+            </column>
+            <column name="uploaded_file_name" type="varchar(255)"/>
+            <column name="uploaded_file_path" type="varchar(1000)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
+

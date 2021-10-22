@@ -4,12 +4,14 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <include file="db-checkTable.xml" relativeToChangelogFile="true"/>
-    <include file="db-createTable.xml" relativeToChangelogFile="true"/>
+    <include file="db-createTableElectronics.xml" relativeToChangelogFile="true"/>
+    <include file="db-createTableUploadData.xml" relativeToChangelogFile="true"/>
     <include file="db-addData1.xml" relativeToChangelogFile="true"/>
     <include file="db-addData2.xml" relativeToChangelogFile="true"/>
     <include file="db-addData3.xml" relativeToChangelogFile="true"/>
     <include file="db-addData4.xml" relativeToChangelogFile="true"/>
     <include file="db-addData5.xml" relativeToChangelogFile="true"/>
+
+    <include file="db-createTableUploadData.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

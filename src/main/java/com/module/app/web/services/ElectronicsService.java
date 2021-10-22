@@ -2,24 +2,18 @@ package com.module.app.web.services;
 
 import com.module.app.web.entity.Electronics;
 import com.module.app.web.repository.ElectronicsRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class ElectronicsService {
     private final ElectronicsRepository electronicsRepository;
 
-    public ElectronicsService(ElectronicsRepository electronicsRepository) {
-        this.electronicsRepository = electronicsRepository;
-    }
-
     public Electronics setDamage(Electronics electronics, Long id) {
-        if (electronics.getComment().isEmpty()) {
-            electronics.setBroken(false);
-        } else {
-            electronics.setBroken(true);
-        }
+        electronics.setBroken(!electronics.getComment().isEmpty());
         return electronicsRepository.save(electronics);
     }
 

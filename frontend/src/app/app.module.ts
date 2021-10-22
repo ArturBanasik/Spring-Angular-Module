@@ -14,6 +14,7 @@ import {LogoutComponent} from './logout/logout.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {ElectricsComponent} from './electrics/electrics.component';
 import {HttpInterceptorAuthService} from './service/interceptor/http-interceptor-auth.service';
+import { FileComponent } from './file/component/file.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {HttpInterceptorAuthService} from './service/interceptor/http-interceptor
     HeaderComponent,
     FooterComponent,
     LogoutComponent,
-    ElectricsComponent
+    ElectricsComponent,
+    FileComponent
   ],
   imports: [
     BrowserModule,
